@@ -28,7 +28,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-esri-"] {
 */
-.icon-esri-select-front, .icon-esri-select-back, .icon-esri-select-back-sm, .icon-esri-select-front-sm, .icon-esri-select-mouse {
+.icon-esri-select-front, .icon-esri-select-back, .icon-esri-mouse, .icon-esri-select-back-sm, .icon-esri-select-front-sm, .icon-esri-select-mouse, .icon-esri-select, .icon-esri-select-polygon {
 	font-family: 'esri-icons';
 	speak: none;
 	font-style: normal;
@@ -52,4 +52,26 @@ you can use the generic selector below, but it's slower:
 }
 .icon-esri-select-mouse:before {
 	content: "\e004";
+}
+.icon-esri-select:before {
+    content: "\e001";
+    color: #57A6D9;
+    margin-right: -1em;
+}
+.icon-esri-select:after {
+	content: "\e000";
+    color: black;
+}
+.icon-esri-mouse:before {
+    content: "\e004";
+    margin-left: -1em;
+}
+.icon-esri-select-polygon:before {
+    content: "\e002";
+    color: #57A6D9;
+    margin-right: -1em;
+}
+.icon-esri-select-polygon:after {
+	content: "\e003";
+    color: black;
 }
