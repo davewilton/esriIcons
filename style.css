@@ -28,7 +28,8 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-esri-"] {
 */
-.icon-esri-select-front, .icon-esri-select-back, .icon-esri-mouse, .icon-esri-select-back-sm, .icon-esri-select-front-sm, .icon-esri-select-mouse, .icon-esri-select, .icon-esri-select-polygon, .icon-esri-polygon {
+.icon-esri-select-front, .icon-esri-select-back, .icon-esri-mouse, .icon-esri-select-back-sm, .icon-esri-select-front-sm, 
+.icon-esri-select-mouse, .icon-esri-select, .icon-esri-select-polygon, .icon-esri-polygon, .icon-esri-diamond, .icon-esri-diamond-outline, .icon-esri-add {
 	font-family: 'esri-icons';
 	speak: none;
 	font-style: normal;
@@ -38,37 +39,15 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-esri-select-front:before {
+
+.icon-esri-select:after {
 	content: "\e000";
-}
-.icon-esri-select-back:before {
-	content: "\e001";
-}
-.icon-esri-select-back-sm:before {
-	content: "\e002";
-}
-.icon-esri-select-front-sm:before {
-	content: "\e003";
-}
-.icon-esri-select-mouse:before {
-	content: "\e004";
+    color: black;
 }
 .icon-esri-select:before {
     content: "\e001";
     color: #57A6D9;
     margin-right: -1em;
-}
-.icon-esri-select:after {
-	content: "\e000";
-    color: black;
-}
-.icon-esri-mouse:before {
-    content: "\e004";
-    margin-left: -1em;
-}
-.icon-esri-polygon:before {
-    content: "\e005";
-    margin-left: -1em;
 }
 .icon-esri-select-polygon:before {
     content: "\e002";
@@ -79,3 +58,27 @@ you can use the generic selector below, but it's slower:
 	content: "\e003";
     color: black;
 }
+.icon-esri-mouse:before {
+    content: "\e004";
+    margin-left: -1em;
+}
+.icon-esri-polygon:before {
+    content: "\e005";
+    margin-left: -1em;
+}
+.icon-esri-add:before {
+	content: "\e006";
+    color: black;
+	margin-left: -1em;
+}
+.icon-esri-diamond:after {
+	content: "\e007";
+    color: yellow;
+	margin-left: -1em;
+}
+.icon-esri-diamond:before {
+	content: "\e008";
+    color: black;
+}
+
+
